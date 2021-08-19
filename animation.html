@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyframes and Animations</title>
+</head>
+<style>
+    .container {
+        background-color: cyan;
+    }
+
+    .box {
+        background-color: purple;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        border-radius: 100%;
+        border: 5px black solid;
+
+        animation-name: anim1;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+
+
+    }
+
+    @keyframes anim1 {
+        0%{
+            top:0px;
+            left:0px;
+        }
+        25%{
+            top: 350px;
+            left: 0px;
+        }
+        75%{
+            top: 350px;
+            left: 350px;
+        }
+        100%{
+            top: 0px;
+            left: 350px;
+        }
+
+    }
+    @keyframes harry1 {
+        from {
+            width: 200px;
+        }
+
+        to {
+            width: 1700px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+          
+        </div>
+    </div>
+</body>
+
+</html>
